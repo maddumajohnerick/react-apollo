@@ -43,7 +43,7 @@ const GET_REPOSITORIES_OF_CURRENT_USER = gql`
 const Profile = () => (
   <Query query={GET_REPOSITORIES_OF_CURRENT_USER}>
     {({ data, loading }) => {
-      const { viewer } = data || {};
+      const { viewer } = data || {}; // Check whether has data
 
       if (loading || !viewer) {
         return <Loading />;
