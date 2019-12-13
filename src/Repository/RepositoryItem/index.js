@@ -1,6 +1,6 @@
 import React from 'react';
 import gql from 'graphql-tag';
-import { useMutation } from '@apollo/react-hooks';
+import { useMutation } from 'react-apollo';
 
 import REPOSITORY_FRAGMENT from '../fragments';
 import Link from '../../Link';
@@ -140,7 +140,7 @@ const RepositoryItem = ({
       variables: { id },
       update: updateAddStar
     }
-  )
+  );
 
   return (
     <div>
