@@ -48,6 +48,6 @@ const RepositoryList = ({ repositories, loading, fetchMore, entry }) => (
       Repositories
     </FetchMore>
   </Fragment>
-)
+);
 
 export default RepositoryList;

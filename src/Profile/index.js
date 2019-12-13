@@ -35,7 +35,7 @@ const Profile = () => {
     {
       notifyOnNetworkStatusChange: true
     }
-  )
+  );
 
   if (error) {
     return <ErrorMessage error={error} />;
@@ -55,7 +55,6 @@ const Profile = () => {
       entry={'viewer'}
     />
   );
-
-}
+};
 
 export default Profile;
